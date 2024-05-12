@@ -1,0 +1,28 @@
+    1  git config --global user.name laarysa
+    2  git config --global user.email larisa.zagorodniuk@gmail.com
+    3  git clone https://github.com/laarysa/HW_10.git
+    4  cd HW_10
+    5  touch text_ignore.txt
+    6  ls -l
+    7  echo "text_ignore.txt" >> .gitignore
+    8  git status
+    9  git add .
+   10  git status 
+   11  git commit -m "1"
+   12  touch main_test.txt
+   13  git add .
+   14  git commit -m "2"
+   15  git branch develop
+   16  git checkout develop
+   17  touch develop_test.txt
+   18  git add .
+   19  git commit -m "3"
+   20  nano develop_test.txt
+   21  git status
+   22  git add .
+   23  git commit -m "4"
+   24  git checkout main
+   25  git merge develop
+   26  git log
+   27  git log
+   28  history > command_list.csv
